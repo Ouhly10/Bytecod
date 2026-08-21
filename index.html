@@ -2291,7 +2291,7 @@ async function watchLock() {
   const contractAddr = document.getElementById('watchContractAddr').value.trim();
   if (!contractAddr || !/^0x[0-9a-fA-F]{40}$/.test(contractAddr)) { showAlert(alertEl, 'Enter a valid storage address (0x...).', 'danger'); return; }
 
-  const specificId = 0;
+  const specificId = null;
 
   showAlert(alertEl, '🔍 Reading from the blockchain...', 'info');
 
